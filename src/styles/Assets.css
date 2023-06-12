@@ -51,18 +51,21 @@
     gap: 10px;
 }
 
-.box .box-img {
-    width: 400px;
-
-}
-
 .box .box-name {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
     .ass-section-1 {
         grid-template-columns: repeat(1, minmax(80px, 1fr));
+    }
+
+    .ass-main-hero p {
+        width: 90%;
+    }
+
+    .ass-section-1 {
+        padding: 50px 30px;
     }
 }

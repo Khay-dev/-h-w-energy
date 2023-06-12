@@ -1,9 +1,9 @@
-import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Assets from "./pages/Assets";
 import About from "./pages/About";
-import Service from "./pages/About";
+import Service from "./pages/Service";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./components/Scroll";
 

@@ -17,7 +17,7 @@
     color: #fff;
     position: absolute;
     text-align: center;
-    top: 53%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -177,9 +177,10 @@
 .section-3 {
     width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     padding: 50px;
 }
 
@@ -189,6 +190,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    margin-left: 30px;
 
 }
 
@@ -237,7 +239,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: end;
 }
 
 .section-4-a .section-header,
@@ -252,7 +253,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.45;
-    text-align: end;
 }
 
 .section-4 .section-4-b {

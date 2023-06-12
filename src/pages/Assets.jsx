@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import "../styles/Assets.css";
 import image from "../img/img.jpg";
+import Footer from "../components/Footer";
 
 const Assets = () => {
   let Equipments = [
@@ -89,6 +90,7 @@ const Assets = () => {
           </div>
         ))}
       </section>
+      <Footer />
     </div>
   );
 };

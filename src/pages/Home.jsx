@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import image from "../img/img.jpg";
+import Footer from "../components/Footer";
 const Home = () => {
   let Projects = [
     {
@@ -25,10 +26,7 @@ const Home = () => {
       <div className="hero">
         <Nav />
         <div className="main-hero">
-          <h2>
-            H & W <br />
-            Energy Services.
-          </h2>
+          <h2>H & W Energy</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             laboriosam praesentium illum corporis minima repudiandae, dicta
@@ -137,7 +135,7 @@ const Home = () => {
         </div>
         <Link to="/projects">
           <button className="custom-btn btn-13 btn-3">
-            <span>Projects</span>
+            <span>See More</span>
           </button>
         </Link>
       </section>
@@ -149,15 +147,15 @@ const Home = () => {
           consectetur iusto eveniet et est. Maiores aliquam ipsum recusandae eos
           libero rerum.
         </div>
-        <a href="mailto:xxxx.com">
+        <a href="mailto:info@handwenergy.com">
           <button className="custom-btn btn-13 btn-3">
             <span>Contact Us!</span>
           </button>
         </a>
       </section>
+      <Footer />
     </div>
   );
 };
-("mailto:info@lanterncafeng.com");
 
 export default Home;
