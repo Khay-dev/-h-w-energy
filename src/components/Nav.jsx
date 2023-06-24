@@ -1,17 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 const Nav = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav>
+    <nav
+      style={{
+        backgroundColor: scrollPosition > 50 ? "#fff" : "transparent",
+        transition: "background-color 300ms ease-in-out",
+      }}
+    >
       <div className="nav-holder-1">
         <Link to="/">
-          <div className="logo">L O G O</div>
+          <div className="logo"></div>
         </Link>
       </div>
       <div className={`nav-holder-2 ${isOpen ? "is-active" : ""}`}>

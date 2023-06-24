@@ -1,6 +1,6 @@
 .assets-hero {
     height: 70vh;
-    background-image: linear-gradient(rgba(12, 44, 40, 0.75), rgba(12, 44, 40, 0.75)), url(../img/img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/img.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -17,7 +17,7 @@
     color: #fff;
     position: absolute;
     text-align: center;
-    top: 53%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -51,9 +51,16 @@
     gap: 10px;
 }
 
-.box .box-name {
+.ass-section-1 .box .box-name {
     font-size: 16px;
     font-weight: 700;
+    line-height: 1.40;
+    text-align: center;
+}
+
+.ass-section-1 .box .box-img img{
+    width: 300px;
+    height: 280px;
 }
 
 @media screen and (max-width: 767px) {
@@ -66,6 +73,6 @@
     }
 
     .ass-section-1 {
-        padding: 50px 30px;
+        padding: 35px 30px;
     }
 }

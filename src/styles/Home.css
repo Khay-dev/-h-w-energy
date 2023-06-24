@@ -1,8 +1,8 @@
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(12, 44, 40, 0.75), rgba(12, 44, 40, 0.75)), url(../img/img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/home.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     padding: 20px;
     position: relative;
@@ -31,7 +31,8 @@
 .main-hero p {
     font-size: 15px;
     line-height: 1.45;
-    width: 60%;
+    width: 50%;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,19 +40,20 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    font-size: 14px
+    font-size: 14px;
+    font-weight: 700;
 }
 
 
 .btn-13 {
     color: #fff;
-    border: 1px solid #fff;
     z-index: 1;
+    background-color: #e65224;
 }
 
 .btn-3 {
-    color: #000;
-    border: 1px solid #000;
+    color: #fff;
+    border: 1px solid #e65224;
 }
 
 .btn-13:after {
@@ -62,12 +64,12 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background: #000;
+    background: #fff;
     transition: all 0.3s ease;
 }
 
 .btn-13:hover {
-    color: #fff;
+    color: #e65224;
 }
 
 .btn-13:hover:after {
@@ -81,22 +83,22 @@
 }
 
 .custom-btn {
+    font-size: 14px;
     padding: 10px;
-    font-weight: 400;
-    background: transparent;
+    font-weight: 500;
     outline: none !important;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+
 }
 
 
 .section-1 {
     height: 50%;
-    width: 90%;
+    width: 80%;
     background-color: #f2f2f2;
-    color: #000;
     margin: auto;
     text-align: center;
     padding: 40px;
@@ -109,7 +111,8 @@
 .section-1 .section-1-header {
     font-weight: 900;
     font-size: clamp(2.1rem, 1.5vw + 1rem, 3rem);
-    line-height: 1.45;
+    line-height: 1.25;
+    color: #e65224;
 }
 
 .section-1 .section-1-text {
@@ -135,7 +138,7 @@
 
 .section-2-content {
     display: flex;
-    animation: 15s slide infinite linear;
+    animation: 30s slide infinite linear;
 }
 
 .slider-items {
@@ -177,11 +180,11 @@
 .section-3 {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 50px;
     padding: 50px;
+    background-color: #f2f2f2;
 }
 
 .section-3-a {
@@ -190,7 +193,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin-left: 30px;
 
 }
 
@@ -216,7 +218,7 @@
 }
 
 .section-3 .section-btn {
-    border: 1px solid #000;
+    border: 1px solid #313131;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -299,20 +301,22 @@
     }
 
     .section-1 {
-        padding: 40px 20px;
+        padding: 20px;
     }
 
     .section-1 .section-1-text {
         padding: 20px 0px;
+        font-size: 14px;
+
     }
 
     .section-3 {
         flex-direction: column;
-        padding: 50px 30px;
+        padding: 35px 30px;
     }
 
     .section-4 {
-        padding: 50px 30px;
+        padding: 35px 30px;
     }
 
     .section-3 .section-3-a,
@@ -339,7 +343,7 @@
     }
 
     .section-5 {
-        padding: 50px 30px;
+        padding: 35px 30px;
         gap: 20px;
     }
 

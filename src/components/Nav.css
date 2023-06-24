@@ -2,8 +2,27 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    color: #fff;
+    padding: 20px 30px;
+    color: #e65224;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+nav .nav-holder-1 .logo {
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 70px;
+}
+
+.active {
+    border-top: 2px solid #313131;
+    border-bottom: 2px solid #313131;
 
 }
 
@@ -17,6 +36,11 @@ nav {
     gap: 30px;
     align-items: center;
     list-style: none;
+    font-weight: 500;
+}
+
+.nav-holder-2 ul li:hover {
+    font-weight: 700;
 }
 
 .nav-holder-3 {
@@ -53,7 +77,6 @@ nav {
         flex-direction: column;
         background-color: #333;
         padding: 21px 47px;
-        color: #fff;
         z-index: 10000;
         transition: right 0.3s ease;
     }
@@ -80,7 +103,7 @@ nav {
     }
 
     .nav-holder-2 ul li:hover {
-        border-bottom: 3px solid #000;
+        border-bottom: 3px solid #313131;
     }
 
 }

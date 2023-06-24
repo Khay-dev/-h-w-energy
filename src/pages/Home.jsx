@@ -1,23 +1,26 @@
 import Nav from "../components/Nav";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
-import image from "../img/img.jpg";
+import image1 from "../img/civilconst.jpeg";
+import image2 from "../img/project20.jpg";
+import image3 from "../img/onshore.jpeg";
+import about from "../img/habout.jpeg";
 import Footer from "../components/Footer";
+
+import Menu from "../assets/brochure.pdf";
+
 const Home = () => {
   let Projects = [
     {
-      image: image,
-      name: "Lorem1",
+      image: image1,
       id: crypto.randomUUID(),
     },
     {
-      image: image,
-      name: "Lorem2",
+      image: image2,
       id: crypto.randomUUID(),
     },
     {
-      image: image,
-      name: "Lorem3",
+      image: image3,
       id: crypto.randomUUID(),
     },
   ];
@@ -28,18 +31,16 @@ const Home = () => {
         <div className="main-hero">
           <h2>H & W Energy</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            laboriosam praesentium illum corporis minima repudiandae, dicta
-            doloremque, similique eaque officia non deleniti cum nemo.{" "}
+            Energized and engaged in moving foward as a team to get the job done
+            right, every time,providing outstanding client support,operating
+            excellence and industry knowledge to ensure reliable and consistent
+            performance.
           </p>
           <div className="hero-btn">
             <div className="custom-btn btn-13">
-              <a href="">
+              <a href={Menu} download="Brochure">
                 <span>Download Brochure</span>
               </a>
-            </div>
-            <div className="custom-btn btn-13">
-              <Link to="/about">Learn More</Link>
             </div>
           </div>
         </div>
@@ -47,68 +48,32 @@ const Home = () => {
       <section className="section-1">
         <div className="section-1-header">Who We Are</div>
         <div className="section-1-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet unde,
-          doloremque dolorem nihil deserunt non quaerat tempora similique,
-          debitis exercitationem rerum praesentium officiis saepe laudantium
-          voluptas eum at temporibus. Vero pariatur possimus non rerum, itaque
-          laborum commodi maxime. Odio, laborum. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Accusamus enim facere quia sit tempore
-          vero nemo laudantium natus dolores error!
+          From Multinational to locally based companies, H & W Energy limited
+          provides outstanding expertise and infrastructure to support the most
+          diverse range of services from well service ,mechanical & civil
+          construction etc. Whatever we operate we stand by our clients, and the
+          work we do.
         </div>
         <div className="custom-btn btn-13 btn-3">
           <Link to="/about">Learn More</Link>
-        </div>
-      </section>
-      <section className="section-2">
-        <div className="section-2-header">Our Client</div>
-        <div className="section-2-content">
-          <div className="slider-items">
-            <div className="logos">
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <img src={image} alt="partner-1" />
-              <div className="logos">
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-                <img src={image} alt="partner-1" />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section className="section-3">
         <div className="section-3-a">
           <div className="section-title">Our Service</div>
           <div className="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            voluptate sit quae? Asperiores ullam atque provident suscipit
-            exercitationem itaque consectetur inventore maxime ea et corrupti,
-            tenetur deleniti numquam ab a officiis, quaerat nostrum magnam fuga
-            libero qui consequatur. Odit, laborum itaque? Excepturi Lorem ipsum.
-          </div>
-          <div className="section-list">
-            <ul>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-              <li>lorem ipsum</li>
-            </ul>
+            At H&W Energy Limited our services and solutions are scalable to
+            match each of our clients unique demands. W e back these with
+            ancillary services that deliver added value and support our
+            offerings with some of the most experienced professionals in the
+            industry.
           </div>
           <div className="custom-btn btn-13 btn-3">
             <Link to="/service">See More</Link>
           </div>
         </div>
         <div className="section-3-b">
-          <img src={image} alt="service" />
+          <img src={about} alt="service" />
         </div>
       </section>
       <section className="section-4">
@@ -116,11 +81,12 @@ const Home = () => {
           <div className="section-header">Our Projects</div>
           <div className="section-4-p">
             {" "}
-            Lorem ipsum dolor sit amet adipisicing elit. Molestiae nobis,
-            tempore eligendi ex modi necessitatibus cumque quasi sapiente dolore
-            ab vel repellat voluptate minima ut adipisci facilis consequatur est
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Doloremque, culpa.
+            Explore our portfolio of successful projects that showcases our
+            expertise and commitment to delievering exceptional results. From
+            offshore installations to complex engineering projects, we have a
+            proven track record of executing projects with Precision,
+            Innovation, and Safety at the forefront.Below are some of our
+            featured projects.
           </div>
         </div>
         <div className="section-4-b">
@@ -129,23 +95,22 @@ const Home = () => {
               <div className="box-img">
                 <img src={project.image} alt="" />
               </div>
-              <div className="box-name">{project.name}</div>
             </div>
           ))}
         </div>
         <Link to="/projects">
           <button className="custom-btn btn-13 btn-3">
-            <span>See More</span>
+            <span>See All</span>
           </button>
         </Link>
       </section>
       <section className="section-5">
         <div className="section-header">Get In Touch</div>
         <div className="text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          optio, non voluptates, totam voluptatibus ad dolores quaerat porro
-          consectetur iusto eveniet et est. Maiores aliquam ipsum recusandae eos
-          libero rerum.
+          H&W is your reliable partner. We are committed to delievering
+          excellence ,ensuring safety, and providing cost effective solutions.
+          Partner with us and experience the highest standards of
+          professionalism and quality in this industry.
         </div>
         <a href="mailto:info@handwenergy.com">
           <button className="custom-btn btn-13 btn-3">

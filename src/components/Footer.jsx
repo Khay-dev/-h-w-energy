@@ -1,8 +1,6 @@
-import {
-  TfiAngleDoubleLeft,
-  TfiImport,
-} from "react-icons/tfi";
+import { TfiAngleDoubleLeft, TfiImport } from "react-icons/tfi";
 import "./Footer.css";
+import Menu from "../assets/brochure.pdf";
 
 const Footer = () => {
   let top = () => {
@@ -26,7 +24,11 @@ const Footer = () => {
               <a href="mailto:info@handwenergy.com">info@handwenergy.com</a>
             </div>
             <div className="download ">
-              <a href="" className="custom-btn btn-13 btn-3">
+              <a
+                href={Menu}
+                download="Brochure"
+                className="custom-btn btn-13 btn-3"
+              >
                 {" "}
                 <TfiImport />
                 DOWNLOAD BROCHURE
@@ -42,9 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="final-footer">
-          <div className="copy">
-            Copyright © H & W 2023{" "}
-          </div>
+          <div className="copy">Copyright © H & W 2023 </div>
           <div className="us">
             WEBSITE BY{" "}
             <a href="https://www.instagram.com/ausdauer_co/"> AUSDAEUR.CO</a>
