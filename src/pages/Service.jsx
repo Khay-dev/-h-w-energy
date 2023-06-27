@@ -1,11 +1,12 @@
 import Nav from "../components/Nav";
 import "../styles/Service.css";
-import image from "../img/img.jpg";
 import image1 from "../img/compress.jpeg";
 import image2 from "../img/civilconst.jpeg";
 import image3 from "../img/mechanical.png";
 import image4 from "../img/onshore.jpeg";
 import image5 from "../img/project21.jpg";
+import image6 from "../img/image5.png";
+
 import Footer from "../components/Footer";
 
 const Service = () => {
@@ -46,7 +47,7 @@ const Service = () => {
       id: crypto.randomUUID(),
     },
     {
-      image: image,
+      image: image6,
       name: "ELECTRICAL INSTRUMENTATION",
       text: "Our thorough knowledge in Electrical and instrumentation services is demonstrated in our ability to provide cutting-edge expertise in Power and ICSS for 2 & 3 phase systems,Gas handling Equipment and Fiscal systems. Oue expertise in E&I include: Process Safety, F&G/PAGA Systems, Calibration Services, Control Room Design and Installation, Transmitters/Control Valves and PSV Integration, Start-Up & Commissioning.",
       class: "right",

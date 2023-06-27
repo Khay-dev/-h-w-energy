@@ -40,11 +40,12 @@ footer .footer-3 {
     margin-left: 10px;
 }
 
+
 .download a {
     font-size: 12px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     width: 50%;
     border: 1px solid #fff;
     margin-left: 10px;

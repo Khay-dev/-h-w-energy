@@ -36,7 +36,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.section-1-abt {
+.section-1-abt,
+.section-4-about {
     width: 100%;
     display: flex;
     align-items: center;
@@ -45,7 +46,8 @@
     padding: 50px;
 }
 
-.section-1-abt .section-1-a {
+.section-1-abt .section-1-a,
+.section-4-about .section-4-a {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -54,13 +56,15 @@
 
 }
 
-.section-1-abt .section-title {
+.section-1-abt .section-title,
+.section-4-about .section-title {
     font-weight: 600;
     font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
     line-height: 1.25;
 }
 
-.section-1-abt .section-text {
+.section-1-abt .section-text,
+.section-4-about .section-text {
     width: 100%;
     font-size: 16px;
     font-weight: 400;
@@ -77,7 +81,8 @@
     align-items: center;
 }
 
-.section-1-abt .section-1-b {
+.section-1-abt .section-1-b,
+.section-4-about .section-4-b {
     width: 50%;
 }
 
@@ -135,7 +140,9 @@
     justify-content: center;
     gap: 50px;
     padding: 50px;
+    background-color: #f2f2f2;
 }
+
 
 .section-3-abt .section-3-a {
     width: 50%;
@@ -172,6 +179,27 @@
 .section-3-abt .section-3-b {
     width: 50%;
 }
+
+/* .section-4-about .section-4-b img {
+    width: 150px;
+    height: 100px;
+} */
+
+.section-4-about .b-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.section-4-about .b-imgs img {
+    width: 25%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+
 
 
 @media screen and (min-width:768px)and (max-width:1025px) {
@@ -232,7 +260,8 @@
     }
 
     .section-1-abt,
-    .section-3-abt {
+    .section-3-abt,
+    .section-4-about {
         flex-direction: column;
         padding: 35px 30px;
     }
@@ -240,8 +269,14 @@
     .section-1-abt .section-1-a,
     .section-3-abt .section-3-a,
     .section-3-abt .section-3-b,
-    .section-1-abt .section-1-b {
+    .section-1-abt .section-1-b,
+    .section-4-about .section-4-a,
+    .section-4-about .section-4-b {
         width: 100%;
+    }
+
+    .section-4-about .b-imgs {
+        gap: 15px;
     }
 
 }

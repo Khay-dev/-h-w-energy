@@ -29,7 +29,7 @@ const Home = () => {
       <div className="hero">
         <Nav />
         <div className="main-hero">
-          <h2>H & W Energy</h2>
+          <h2>H&W Energy</h2>
           <p>
             Energized and engaged in moving foward as a team to get the job done
             right, every time,providing outstanding client support,operating
@@ -48,7 +48,7 @@ const Home = () => {
       <section className="section-1">
         <div className="section-1-header">Who We Are</div>
         <div className="section-1-text">
-          From Multinational to locally based companies, H & W Energy limited
+          From Multinational to locally based companies, H&W Energy limited
           provides outstanding expertise and infrastructure to support the most
           diverse range of services from well service ,mechanical & civil
           construction etc. Whatever we operate we stand by our clients, and the
@@ -112,11 +112,11 @@ const Home = () => {
           Partner with us and experience the highest standards of
           professionalism and quality in this industry.
         </div>
-        <a href="mailto:info@handwenergy.com">
+        <Link to="/contact">
           <button className="custom-btn btn-13 btn-3">
             <span>Contact Us!</span>
           </button>
-        </a>
+        </Link>
       </section>
       <Footer />
     </div>

@@ -85,7 +85,7 @@ const Assets = () => {
         <div className="ass-main-hero">
           <h2>ASSETS & EQUIPMENTS</h2>
           <p>
-            At H & W, we pride ourselves on our state of the art assets and
+            At H&W, we pride ourselves on our state of the art assets and
             equipment that enables us to deliver high quality solutions to our
             clients. We continually invest in our assets to stay at the
             forefront of the industry.Our extensive range of assests and

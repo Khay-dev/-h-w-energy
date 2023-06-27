@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="final-footer">
-          <div className="copy">Copyright © H & W 2023 </div>
+          <div className="copy">Copyright © H&W 2023 </div>
           <div className="us">
             WEBSITE BY{" "}
             <a href="https://www.instagram.com/ausdauer_co/"> AUSDAEUR.CO</a>

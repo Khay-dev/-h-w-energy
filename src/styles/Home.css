@@ -122,50 +122,6 @@
     line-height: 1.45;
 }
 
-.section-2 {
-    overflow: hidden;
-    padding: 60px 0;
-    width: 100%;
-}
-
-.section-2 .section-2-header {
-    font-weight: 900;
-    font-size: clamp(2.1rem, 1.5vw + 1rem, 3rem);
-    line-height: 1.45;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-2-content {
-    display: flex;
-    animation: 30s slide infinite linear;
-}
-
-.slider-items {
-    flex: 0 0 200%;
-    display: flex;
-}
-
-.section-2-content:hover {
-    animation-play-state: paused;
-}
-
-.section-2 .logos {
-    flex: 0 0 50%;
-    display: flex;
-    align-items: center;
-}
-
-.section-2 .logos-2 {
-    display: flex;
-    flex: 0 0 50%;
-}
-
-.section-2 img {
-    flex: 0 0 auto;
-    height: 100px;
-    margin: 0 40px;
-}
 
 @keyframes slide {
     0% {

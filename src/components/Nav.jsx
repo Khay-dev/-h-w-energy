@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
 const Nav = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,6 +18,8 @@ const Nav = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+  const { pathname: activePage } = useLocation();
+
   return (
     <nav
       style={{
@@ -36,19 +38,32 @@ const Nav = () => {
         </div>
         <ul>
           <Link to="/">
-            <li>Home</li>
+            <li className={activePage === "/" ? "active" : ""}>Home</li>
           </Link>
           <Link to="/about">
-            <li>About Us</li>
+            <li className={activePage === "/about" ? "active" : ""}>
+              About Us
+            </li>
           </Link>
           <Link to="/service">
-            <li>Services</li>
+            <li className={activePage === "/service" ? "active" : ""}>
+              Services
+            </li>
           </Link>
           <Link to="/assets">
-            <li>Assets&Equipments</li>
+            <li className={activePage === "/assets" ? "active" : ""}>
+              Assets/Equipments
+            </li>
           </Link>
           <Link to="/projects">
-            <li>Projects</li>
+            <li className={activePage === "/projects" ? "active" : ""}>
+              Projects
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li className={activePage === "/contact" ? "active" : ""}>
+              Contact
+            </li>
           </Link>
         </ul>
       </div>
