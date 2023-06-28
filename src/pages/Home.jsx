@@ -6,9 +6,10 @@ import image2 from "../img/project20.jpg";
 import image3 from "../img/onshore.jpeg";
 import about from "../img/habout.jpeg";
 import Footer from "../components/Footer";
-
 import Menu from "../assets/brochure.pdf";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
   let Projects = [
     {
@@ -24,19 +25,38 @@ const Home = () => {
       id: crypto.randomUUID(),
     },
   ];
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="home">
       <div className="hero">
         <Nav />
         <div className="main-hero">
-          <h2>H&W Energy</h2>
-          <p>
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            H&W Energy
+          </h2>
+          <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             Energized and engaged in moving foward as a team to get the job done
             right, every time,providing outstanding client support,operating
             excellence and industry knowledge to ensure reliable and consistent
             performance.
           </p>
-          <div className="hero-btn">
+          <div
+            className="hero-btn"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <div className="custom-btn btn-13">
               <a href={Menu} download="Brochure">
                 <span>Download Brochure</span>
@@ -72,7 +92,11 @@ const Home = () => {
             <Link to="/service">See More</Link>
           </div>
         </div>
-        <div className="section-3-b">
+        <div
+          className="section-3-b"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+        >
           <img src={about} alt="service" />
         </div>
       </section>
@@ -91,7 +115,13 @@ const Home = () => {
         </div>
         <div className="section-4-b">
           {Projects.map((project) => (
-            <div className="box" key={project.id}>
+            <div
+              className="box"
+              key={project.id}
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="900"
+            >
               <div className="box-img">
                 <img src={project.image} alt="" />
               </div>

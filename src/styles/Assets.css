@@ -1,6 +1,6 @@
 .assets-hero {
     height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/assetsh.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -17,7 +17,7 @@
     color: #fff;
     position: absolute;
     text-align: center;
-    top: 57%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;

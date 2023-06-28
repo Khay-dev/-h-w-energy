@@ -32,7 +32,7 @@
 }
 
 .section-main .section-b .part {
-    padding: 30px 0px;
+    padding: 15px 0px;
     border-bottom: 1px solid #000;
     width: 80%;
 }
@@ -77,7 +77,7 @@
     .section-main {
         flex-direction: column;
         gap: 30px;
-        padding: 370px 30px 50px;
+        padding: 170px 30px 50px;
     }
 
     .section-main .section-a {

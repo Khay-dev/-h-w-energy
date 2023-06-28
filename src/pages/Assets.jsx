@@ -13,7 +13,9 @@ import image10 from "../img/assets10.jpg";
 import image11 from "../img/assets11.jpg";
 import image12 from "../img/assets12.jpg";
 import Footer from "../components/Footer";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Assets = () => {
   let Equipments = [
     {
@@ -77,14 +79,27 @@ const Assets = () => {
       id: crypto.randomUUID(),
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className="assets">
       <div className="assets-hero">
         <Nav />
         <div className="ass-main-hero">
-          <h2>ASSETS & EQUIPMENTS</h2>
-          <p>
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            ASSETS & EQUIPMENTS
+          </h2>
+          <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             At H&W, we pride ourselves on our state of the art assets and
             equipment that enables us to deliver high quality solutions to our
             clients. We continually invest in our assets to stay at the

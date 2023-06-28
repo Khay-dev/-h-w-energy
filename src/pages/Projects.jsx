@@ -3,7 +3,6 @@ import Nav from "../components/Nav";
 import "../styles/Project.css";
 import Menu from "../assets/brochure.pdf";
 
-
 import image1 from "../img/abouta.png";
 import image2 from "../img/project15.jpg";
 import image3 from "../img/project1.jpg";
@@ -28,7 +27,9 @@ import image21 from "../img/project19.jpg";
 import image22 from "../img/project20.jpg";
 import image23 from "../img/project21.jpg";
 import image24 from "../img/project22.jpg";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Projects = () => {
   const slides = [
     {
@@ -95,20 +96,38 @@ const Projects = () => {
       id: crypto.randomUUID(),
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="projects">
       <div className="proj-hero">
         <Nav />
         <div className="proj-main-hero">
-          <h2>PROJECTS</h2>
-          <p>
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            PROJECTS
+          </h2>
+          <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             Here we showcase some of our remarkable endeavors we have
             undertaken. At H&W we take pride in our diverse portfolio of
             projects across various industries. From concept to completion, We
             are dedicated to delievering innovative and sustainable solutions
             that exceed clients expectations.{" "}
           </p>
-          <div className="custom-btn btn-13">
+          <div
+            className="custom-btn btn-13"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <a href={Menu} download="Brochure">
               <span>Download Brochure</span>
             </a>

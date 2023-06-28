@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import image1 from "../img/abouta.png";
 import image2 from "../img/safety.jpeg";
-
 import grid1 from "../img/Agip.png";
 import grid2 from "../img/agpc.png";
 import grid3 from "../img/Daewoo.jpeg";
@@ -12,25 +11,45 @@ import grid6 from "../img/NLNG.jpeg";
 import grid7 from "../img/npdc.png";
 import grid8 from "../img/Seplat.jpeg";
 import grid9 from "../img/Total.jpeg";
-
 import "../styles/About.css";
-
 import Menu from "../assets/brochure.pdf";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="about">
       <div className="about-hero">
         <Nav />
         <div className="abt-main-hero">
-          <h2> Our Major Goal Is Getting The Work Done Always. </h2>
-          <p>
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            {" "}
+            Our Major Goal Is Getting The Work Done Always.{" "}
+          </h2>
+          <p
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             With a wealth of experience and a commitment to exellence, We are a
             leading player in the industry. Our dedicated team of professionals
             is passionate about delievering quality services and solutions to
             clients.
           </p>
-          <div className="custom-btn btn-13">
+          <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            className="custom-btn btn-13"
+          >
             <a href={Menu} download="Brochure">
               <span>Download Brochure</span>
             </a>
@@ -51,7 +70,11 @@ const About = () => {
             environments.
           </div>
         </div>
-        <div className="section-1-b">
+        <div
+          className="section-1-b"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+        >
           <img src={image1} alt="service" />
         </div>
       </section>
@@ -99,7 +122,11 @@ const About = () => {
         </div>
       </section>
       <section className="section-3-abt">
-        <div className="section-3-b">
+        <div
+          className="section-3-b"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
           <img src={image2} alt="service" />
         </div>
         <div className="section-3-a">
