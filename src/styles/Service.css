@@ -70,6 +70,7 @@
     font-weight: 700;
     font-size: clamp(1.6rem, 1.5vw + 1rem, 3rem);
     line-height: 1.45;
+    color: #e65224;
 }
 
 .a .text {
