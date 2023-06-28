@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import "../styles/Project.css";
 import Menu from "../assets/brochure.pdf";
-
 import image1 from "../img/abouta.png";
 import image2 from "../img/project15.jpg";
 import image3 from "../img/project1.jpg";
@@ -30,6 +29,7 @@ import image24 from "../img/project22.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 const Projects = () => {
   const slides = [
     {
@@ -100,58 +100,65 @@ const Projects = () => {
     AOS.init();
   }, []);
   return (
-    <div className="projects">
-      <div className="proj-hero">
-        <Nav />
-        <div className="proj-main-hero">
-          <h2
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            PROJECTS
-          </h2>
-          <p
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            Here we showcase some of our remarkable endeavors we have
-            undertaken. At H&W we take pride in our diverse portfolio of
-            projects across various industries. From concept to completion, We
-            are dedicated to delievering innovative and sustainable solutions
-            that exceed clients expectations.{" "}
-          </p>
-          <div
-            className="custom-btn btn-13"
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            <a href={Menu} download="Brochure">
-              <span>Download Brochure</span>
-            </a>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>H&W|Project </title>
+      </Helmet>
+
+      <div className="projects">
+        <div className="proj-hero">
+          <Nav />
+          <div className="proj-main-hero">
+            <h2
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              PROJECTS
+            </h2>
+            <p
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              Here we showcase some of our remarkable endeavors we have
+              undertaken. At H&W we take pride in our diverse portfolio of
+              projects across various industries. From concept to completion, We
+              are dedicated to delievering innovative and sustainable solutions
+              that exceed clients expectations.{" "}
+            </p>
+            <div
+              className="custom-btn btn-13"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <a href={Menu} download="Brochure">
+                <span>Download Brochure</span>
+              </a>
+            </div>
           </div>
         </div>
+        <section className="section-project">
+          {slides.map((slide) => (
+            <div className="box" key={slide.id}>
+              <div className="text-contain">
+                <div className="title">{slide.title}</div>
+                <div className="text">{slide.description}</div>
+              </div>
+              <div className="box-img">
+                <img src={slide.image1} alt="" />
+                <img src={slide.image2} alt="" />
+                <img src={slide.image3} alt="" />
+                <img src={slide.image4} alt="" />
+              </div>
+            </div>
+          ))}
+        </section>
+        <Footer />
       </div>
-      <section className="section-project">
-        {slides.map((slide) => (
-          <div className="box" key={slide.id}>
-            <div className="text-contain">
-              <div className="title">{slide.title}</div>
-              <div className="text">{slide.description}</div>
-            </div>
-            <div className="box-img">
-              <img src={slide.image1} alt="" />
-              <img src={slide.image2} alt="" />
-              <img src={slide.image3} alt="" />
-              <img src={slide.image4} alt="" />
-            </div>
-          </div>
-        ))}
-      </section>
-      <Footer />
-    </div>
+    </>
   );
 };
 

@@ -16,6 +16,7 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 const Assets = () => {
   let Equipments = [
     {
@@ -84,43 +85,49 @@ const Assets = () => {
   }, []);
 
   return (
-    <div className="assets">
-      <div className="assets-hero">
-        <Nav />
-        <div className="ass-main-hero">
-          <h2
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            ASSETS & EQUIPMENTS
-          </h2>
-          <p
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            At H&W, we pride ourselves on our state of the art assets and
-            equipment that enables us to deliver high quality solutions to our
-            clients. We continually invest in our assets to stay at the
-            forefront of the industry.Our extensive range of assests and
-            equipment allows us to efficiently execute projects across various
-            sectors.{" "}
-          </p>
-        </div>
-      </div>
-      <section className="ass-section-1">
-        {Equipments.map((eqipment) => (
-          <div className="box" key={eqipment.id}>
-            <div className="box-img">
-              <img src={eqipment.image} alt="" />
-            </div>
-            <div className="box-name">{eqipment.name}</div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>H&W|Assets </title>
+      </Helmet>
+      <div className="assets">
+        <div className="assets-hero">
+          <Nav />
+          <div className="ass-main-hero">
+            <h2
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              ASSETS & EQUIPMENTS
+            </h2>
+            <p
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              At H&W, we pride ourselves on our state of the art assets and
+              equipment that enables us to deliver high quality solutions to our
+              clients. We continually invest in our assets to stay at the
+              forefront of the industry.Our extensive range of assests and
+              equipment allows us to efficiently execute projects across various
+              sectors.{" "}
+            </p>
           </div>
-        ))}
-      </section>
-      <Footer />
-    </div>
+        </div>
+        <section className="ass-section-1">
+          {Equipments.map((eqipment) => (
+            <div className="box" key={eqipment.id}>
+              <div className="box-img">
+                <img src={eqipment.image} alt="" />
+              </div>
+              <div className="box-name">{eqipment.name}</div>
+            </div>
+          ))}
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 };
 

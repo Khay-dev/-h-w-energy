@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 const Service = () => {
   let Services = [
     {
@@ -65,44 +66,54 @@ const Service = () => {
     AOS.init();
   }, []);
   return (
-    <div className="service">
-      <div className="service-hero">
-        <Nav />
-        <div className="ser-main-hero">
-          <h2
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            OUR SERVICES
-          </h2>
-          <p
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
-            We have built our business from the ground up with local
-            leadership.We know the field, the well, the challenges and how to
-            solve them. Our dedicated team of pros is passionate about providing
-            high quality solutions to clients worldwide.
-          </p>
-        </div>
-      </div>
-      <section className="ser-section-1">
-        {Services.map((service) => (
-          <div className={service.class} key={service.id}>
-            <div className="a">
-              <div className="name">{service.name}</div>
-              <div className="text">{service.text}</div>
-            </div>
-            <div className="b" data-aos={service.data} data-aos-duration="1000">
-              <img src={service.image} alt="" />
-            </div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>H&W|Service </title>
+      </Helmet>
+      <div className="service">
+        <div className="service-hero">
+          <Nav />
+          <div className="ser-main-hero">
+            <h2
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              OUR SERVICES
+            </h2>
+            <p
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              We have built our business from the ground up with local
+              leadership.We know the field, the well, the challenges and how to
+              solve them. Our dedicated team of pros is passionate about
+              providing high quality solutions to clients worldwide.
+            </p>
           </div>
-        ))}
-      </section>
-      <Footer />
-    </div>
+        </div>
+        <section className="ser-section-1">
+          {Services.map((service) => (
+            <div className={service.class} key={service.id}>
+              <div className="a">
+                <div className="name">{service.name}</div>
+                <div className="text">{service.text}</div>
+              </div>
+              <div
+                className="b"
+                data-aos={service.data}
+                data-aos-duration="1000"
+              >
+                <img src={service.image} alt="" />
+              </div>
+            </div>
+          ))}
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 };
 
