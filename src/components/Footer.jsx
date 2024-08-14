@@ -3,9 +3,11 @@ import "./Footer.css";
 import Menu from "../assets/brochure.pdf";
 
 const Footer = () => {
-  let top = () => {
+  const top = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer">
       <footer>
@@ -37,14 +39,15 @@ const Footer = () => {
           </div>
 
           <div className="footer-3">
-            <div className="top" onClick={top}>
+            {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+<div className="top" onClick={top}>
               <TfiAngleDoubleLeft />
               <span>Back To Top</span>
             </div>
           </div>
         </div>
         <div className="final-footer">
-          <div className="copy">Copyright © H&W 2023 </div>
+          <div className="copy">Copyright © H&W {currentYear} </div>
           <div className="us">
             WEBSITE BY{" "}
             <a href="https://www.instagram.com/ausdauer_co/"> AUSDAEUR.CO</a>
