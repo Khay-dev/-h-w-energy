@@ -26,6 +26,12 @@ import image21 from "../img/project19.jpg";
 import image22 from "../img/project20.jpg";
 import image23 from "../img/project21.jpg";
 import image24 from "../img/project22.jpg";
+import image25 from "../img/hwa.jpg";
+import image26 from "../img/hwb.jpg";
+import image27 from "../img/hwc.jpg";
+import image28 from "../img/hwd.jpg";
+
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -92,6 +98,17 @@ const Projects = () => {
       image2: image22,
       image3: image23,
       image4: image24,
+
+      id: crypto.randomUUID(),
+    },
+    {
+      title: "Project",
+      description:
+        "Job:Waukesha pump shelter and overhead crane installation at UPS OML 30",
+      image1: image25,
+      image2: image26,
+      image3: image27,
+      image4: image28,
 
       id: crypto.randomUUID(),
     },

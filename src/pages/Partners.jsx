@@ -1,8 +1,14 @@
 /* eslint-disable react/prop-types */
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import "../styles/PartnersPage.css"
+import "../styles/PartnersPage.css";
 import { Helmet } from "react-helmet";
+import image1 from "../img/Road.jpg";
+import image2 from "../img/euro.jpg";
+import image3 from "../img/kolink.webp";
+import image4 from "../img/arnikon.jpg";
+
+
 
 const partnersData = [
   {
@@ -22,14 +28,14 @@ const partnersData = [
       'Strict Quality Control: ISO, FEM, DIN standards',
       'Support & Maintenance: Full technical support',
     ],
-    footprint: 'Iraq, Italy, Kyrgyzstan, Bosnia & Herzegovina, Algeria, Tunisia, Ukraine',
     reasons: [
       'Proven OEM reliability',
       'Modular, customizable systems',
       'Long-lasting equipment with low maintenance',
       'End-to-end support',
     ],
-    website:"https://www.arnikon.com/"
+    website: "https://www.arnikon.com/",
+    image: image4,
   },
   {
     name: 'Shanghai Kolink Valve Co. Ltd',
@@ -52,14 +58,14 @@ const partnersData = [
       'Performance in Harsh Conditions: High-pressure, corrosive environments',
       'OEM Commitment: Rapid support for projects',
     ],
-    footprint: 'Southeast Asia, Middle East, Europe, Africa, North & South America',
     reasons: [
       'API & ISO certified products',
       'Customized engineering solutions',
       'Reliable valves for high-risk environments',
       'Strong technical & after-sales support',
     ],
-    website:"https://www.kolinkvalves.com/"
+    website: "https://www.kolinkvalves.com/",
+    image: image3
   },
   {
     name: 'Euro Gas Systems SRL',
@@ -80,7 +86,6 @@ const partnersData = [
       'Vibration Analysis & Diagnostics: Early issue detection',
       'NDT Services: Ensuring safety and reliability',
     ],
-    footprint: 'Romania, Middle East, North Africa, Eastern Europe, Central Asia',
     reasons: [
       '30+ years of gas compression expertise',
       'Certified, high-efficiency systems',
@@ -88,6 +93,7 @@ const partnersData = [
       'Comprehensive aftermarket support',
     ],
     website: 'https://eurogassystems.com/',
+    image: image2
   },
   {
     name: 'Gunnebo Safe Storage',
@@ -110,7 +116,6 @@ const partnersData = [
       'Digital Security: Biometric, remote monitoring',
       'Certified Compliance: EN, UL standards',
     ],
-    footprint: 'Europe, Asia, Africa, Americas (25+ countries)',
     reasons: [
       'Unmatched security with EN, UL certifications',
       'Operational reliability for high-risk sectors',
@@ -118,15 +123,21 @@ const partnersData = [
       'Global expertise with local support',
       'Digital integration for facility management',
     ],
-    website:"https://gunnebo.com.au/products/high-security-entry/security-doors/"
+    website: "https://gunnebo.com.au/products/high-security-entry/security-doors/",
+    image: image1
   },
 ];
+
 const PartnerCard = ({ partner }) => (
   <div className="partner-container">
     <div className="partner-sticky-name">{partner.name}</div>
     <div className="partner-details">
+      <img
+        src={partner.image}
+        alt={`${partner.name} visual`}
+        className="partner-image"
+      />
       <p className="partner-description">{partner.description}</p>
-
       <div className="partner-section">
         <h3>Product Portfolio</h3>
         <ul className="partner-list">
@@ -136,7 +147,6 @@ const PartnerCard = ({ partner }) => (
           ))}
         </ul>
       </div>
-
       <div className="partner-section">
         <h3>Core Capabilities</h3>
         <ul className="partner-list">
@@ -146,14 +156,8 @@ const PartnerCard = ({ partner }) => (
           ))}
         </ul>
       </div>
-
       <div className="partner-section">
-        <h3>International Footprint</h3>
-        <p>{partner.footprint}</p>
-      </div>
-
-      <div className="partner-section">
-        <h3>Why H&W Energy Limited Partners with {partner.name}</h3>
+        <h3>Why H&W Energy Partners with {partner.name}</h3>
         <ul className="partner-list">
           {partner.reasons.map((item, index) => (
             // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
@@ -163,7 +167,12 @@ const PartnerCard = ({ partner }) => (
       </div>
       {partner.website && (
         <div className="partner-website">
-          <a href={partner.website} target="_blank" rel="noopener noreferrer" className="partner-website-link">
+          <a
+            href={partner.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="partner-website-link"
+          >
             Visit Website
           </a>
         </div>
@@ -172,30 +181,31 @@ const PartnerCard = ({ partner }) => (
   </div>
 );
 
-
 const PartnersPage = () => {
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
-        <title>H&W|Partners </title>
+        <title>H&W | Partners</title>
       </Helmet>
-    <div className="partners-page">
-      <Nav/>
-      <header className="page-header">
-        <h1>Our Trusted OEM Partners</h1>
-        <p>
-          H&W Energy Limited collaborates with world-class Original Equipment Manufacturers (OEMs) to deliver cutting-edge solutions for energy, infrastructure, and industrial projects.
-        </p>
-      </header>
-      <div className="partners-grid">
-        {partnersData.map((partner, index) => (
-          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+      <div className="partners-page">
+        <div className="partners-hero">
+        <Nav />
+        <header className="page-header">
+          <h1>Our Trusted OEM Partners</h1>
+          <p>
+            H&W Energy Limited collaborates with world-class Original Equipment Manufacturers (OEMs) to deliver cutting-edge solutions for energy, infrastructure, and industrial projects.
+          </p>
+        </header>
+        </div>
+        <div className="partners-grid">
+          {partnersData.map((partner, index) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 <PartnerCard key={index} partner={partner} />
-        ))}
+          ))}
+        </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

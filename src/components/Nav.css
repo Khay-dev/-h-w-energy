@@ -12,12 +12,12 @@ nav {
 }
 
 nav .nav-holder-1 .logo {
-    background-image: url(../img/logo.png);
+    background-image: url(../img/hwEnergy-Logo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 130px;
-    height: 70px;
+    background-size: cover;
+    width: 120px;
+    height: 100px;
 }
 
 .nav-holder-2 {
@@ -61,17 +61,17 @@ nav .nav-holder-1 .logo {
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1025px) {
     .nav-holder-2 ul {
         gap: 15px;
     }
 
     nav {
-        padding: 20px;
+        padding: 10px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .nav-holder-3 {
         display: block;
