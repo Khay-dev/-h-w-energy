@@ -29,6 +29,7 @@ const partnersData = [
       'Long-lasting equipment with low maintenance',
       'End-to-end support',
     ],
+    website:"https://www.arnikon.com/"
   },
   {
     name: 'Shanghai Kolink Valve Co. Ltd',
@@ -58,6 +59,7 @@ const partnersData = [
       'Reliable valves for high-risk environments',
       'Strong technical & after-sales support',
     ],
+    website:"https://www.kolinkvalves.com/"
   },
   {
     name: 'Euro Gas Systems SRL',
@@ -85,6 +87,7 @@ const partnersData = [
       'Flexible packaging/re-packaging solutions',
       'Comprehensive aftermarket support',
     ],
+    website: 'https://eurogassystems.com/',
   },
   {
     name: 'Gunnebo Safe Storage',
@@ -115,6 +118,7 @@ const partnersData = [
       'Global expertise with local support',
       'Digital integration for facility management',
     ],
+    website:"https://gunnebo.com.au/products/high-security-entry/security-doors/"
   },
 ];
 const PartnerCard = ({ partner }) => (
@@ -157,6 +161,13 @@ const PartnerCard = ({ partner }) => (
           ))}
         </ul>
       </div>
+      {partner.website && (
+        <div className="partner-website">
+          <a href={partner.website} target="_blank" rel="noopener noreferrer" className="partner-website-link">
+            Visit Website
+          </a>
+        </div>
+      )}
     </div>
   </div>
 );

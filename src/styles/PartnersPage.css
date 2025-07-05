@@ -87,6 +87,27 @@
   color: #1f1f1f;
   margin-bottom: 0.4rem;
 }
+.partner-website {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.partner-website-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #b04a2f;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.partner-website-link:hover,
+.partner-website-link:focus {
+  background-color: #a23e27;
+  outline: none;
+}
 
 /* Responsive adjustments for sticky header and details */
 @media (max-width: 768px) {
