@@ -12,11 +12,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 const Service = () => {
-  let Services = [
+  const Services = [
     {
       image: image1,
       name: "COMPRESSOR SYSTEM",
-      text: "We provide industry standard compressor systems and services by combining our product excellence with dedicated installation and expertise from our designated staff and OEM partners. We design, engineer,assemble and test each compressor package,every project is custom designed for its specific environment and duties. We sell install and provide after sale support services for: Gas booster compressors,Gas engine generators,CNG systems & virtual pipelines Air cooled heat exchangers.",
+      text: "H&W Energy Ltd. provides custom-designed compressor systems, partnering with leading OEMs to deliver high-quality, efficient solutions. Our expert team designs, assembles, and tests each system to meet specific operational needs, ensuring reliability in demanding environments. We offer gas booster compressors for pipelines and CNG stations, gas engine generators for clean power in industrial or remote sites, CNG systems and virtual pipelines for cost-effective gas delivery, and air-cooled heat exchangers for water-free cooling. With professional installation and ongoing support, we ensure tailored, high-performance solutions.Contact us for a quote.",
       class: "left",
       id: crypto.randomUUID(),
       data: "zoom-in-left",
@@ -24,7 +24,7 @@ const Service = () => {
     {
       image: image2,
       name: "CIVIL CONSTRUCTION",
-      text: "Our service is process-centered from design to implementationas well as general maintenance; we provide innovative solutions for our clients through excellence and service in all aspect of the civil construction. Our civil worksinclude but not limited to: Front-End Engineering Design, Building And Structural Construction, Road & Bridge Constructions, Post/pre Site Preparation Activities (Oil & Gas) etc..",
+      text: "H&W Energy Limited provides top-tier civil construction services, focusing on sustainability, quality, and strict adherence to Health, Safety, and Environmental (HSE) standards. Our expert team delivers end-to-end solutions, from design to maintenance, for oil & gas, infrastructure, commercial, residential, and industrial projects. We offer Front-End Engineering Design (FEED), building and structural construction, road and bridge construction, and site preparation, using eco-friendly materials, energy-efficient methods, and waste reduction strategies. Our commitment to HSE ensures safe, compliant, and durable projects. Contact us for a consultation or quote.",
       class: "right",
       id: crypto.randomUUID(),
       data: "zoom-in-right",
@@ -32,7 +32,7 @@ const Service = () => {
     {
       image: image3,
       name: "MECHANICAL CONSTRUCTION",
-      text: "H&W Energy provides both industrial and commercial mechanical construction. Our competency in these areas has been unrivalved since our inception. We understand the dynamics of fast-track schedules and rigorous construction standards, and we know what it takes to integrate real components into design-build-details. Our job is to help ensure constructability, maintainability and sustainability. We do that with an optimal blend of technical expertise, delievry services & structured stability. Our mechanical capabilities include but not limited to: Fabrication/Prefabrication, Customized Duct Work, Industrial & Process Piping, BOP (Balance Of Plant),Pipeline Pre-Commisioning etc.",
+      text: "H&W Energy Limited delivers expert mechanical construction services for industrial and commercial projects, focusing on precision, sustainability, and HSE compliance. Our experienced team provides end-to-end solutions, from design to maintenance, including off-site fabrication, customized ductwork, industrial piping, Balance of Plant (BOP) systems, pipeline pre-commissioning, and system integration. We prioritize energy-efficient, eco-friendly designs to reduce costs and environmental impact. Serving industries like oil & gas, energy, and manufacturing, we ensure quality, timely delivery, and safety. Contact us for a consultation or quote.",
       class: "left",
       id: crypto.randomUUID(),
       data: "zoom-in-left",
@@ -40,15 +40,15 @@ const Service = () => {
     {
       image: image4,
       name: "ONSHORE PIPELINES & STORAGE FACILITY MAINTENANCE",
-      text: "H&W Energy also possesses required expertise to provide a complete spectruem of field services. This includes Inspection & maintenance of pipeline & storage facilities, Pipeline pigging & inspection, surveying, mapping, right-of-way acquistion, GIS, environmental permitting, inspection/ construction management and pipeline integrity management, delievery services & structured stability.",
+      text: "H&W Energy Limited provides expert mechanical construction services for industrial and commercial projects, emphasizing precision, sustainability, and HSE compliance. Our skilled team delivers tailored solutions, including off-site fabrication, customized ductwork, industrial piping, Balance of Plant (BOP) systems, pipeline pre-commissioning, and full system integration. We prioritize energy-efficient designs to reduce costs and environmental impact. Serving industries like oil & gas, energy, and manufacturing, we ensure quality, timely delivery, and ongoing maintenance. Contact us for a consultation or quote.",
       class: "right",
       id: crypto.randomUUID(),
       data: "zoom-in-right",
     },
     {
       image: image5,
-      name: "MARINE SERVICE",
-      text: "Our capability in marine services is, but not limited to design, contruction, maintenance & procurement; Accomodation Barges, Ocean Vessels, Pipeline Maintenance(Flow Lines), Hydro-Testing, Dams and Canals design and constreuction, Dredging Services, Rig Move, Self-Propelled Spud & Jack-Up-Barges, Installation and upgrade of onshore/onshore production facilities.",
+      name: "PIPELINE CONTRUCTIONS & REPAIRS",
+      text: "H&W Energy Ltd. delivers expert pipeline construction and repair services for onshore and offshore oil and gas applications. Our team provides turnkey solutions, including design, construction, inspection, and maintenance, ensuring safety, efficiency, and environmental compliance. Services encompass full EPC pipeline construction, integrity management with intelligent pigging and NDT, emergency and planned repairs, flowline upgrades, hydrostatic testing, corrosion control via cathodic protection, and right-of-way maintenance. We meet ASME, API, and ISO standards, offering tailored, high-quality solutions. Contact us for a consultation or quote.",
       class: "left",
       id: crypto.randomUUID(),
       data: "zoom-in-left",
@@ -56,7 +56,7 @@ const Service = () => {
     {
       image: image6,
       name: "ELECTRICAL INSTRUMENTATION",
-      text: "Our thorough knowledge in Electrical and instrumentation services is demonstrated in our ability to provide cutting-edge expertise in Power and ICSS for 2 & 3 phase systems,Gas handling Equipment and Fiscal systems. Oue expertise in E&I include: Process Safety, F&G/PAGA Systems, Calibration Services, Control Room Design and Installation, Transmitters/Control Valves and PSV Integration, Start-Up & Commissioning.",
+      text: "H&W Energy Ltd. delivers specialized Electrical & Instrumentation (E&I) services for energy, industrial, and commercial sectors, ensuring safety, efficiency, and compliance. Our expert team provides end-to-end solutions, including design, installation, and maintenance of 2- and 3-phase power systems, integrated control and safety systems (ICSS), gas handling equipment, fiscal metering, fire and gas (F&G) systems, public address and general alarm (PAGA) systems, calibration, control room design, transmitter/control valve/PSV integration, and start-up/commissioning. We prioritize cutting-edge technology, tailored solutions, and strict adherence to safety and regulatory standards. Contact us for a consultation or quote.",
       class: "right",
       id: crypto.randomUUID(),
       data: "zoom-in-right",

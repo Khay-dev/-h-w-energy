@@ -29,11 +29,12 @@ const Nav = () => {
     >
       <div className="nav-holder-1">
         <Link to="/">
-          <div className="logo"></div>
+          <div className="logo"/>
         </Link>
       </div>
       <div className={`nav-holder-2 ${isOpen ? "is-active" : ""}`}>
-        <div className="navbar-close" onClick={toggleNavbar}>
+        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+<div className="navbar-close" onClick={toggleNavbar}>
           <HiX />
         </div>
         <ul>
@@ -65,9 +66,15 @@ const Nav = () => {
               Contact
             </li>
           </Link>
+          <Link to="/partners">
+            <li className={activePage === "/partners" ? "active" : ""}>
+              Partners
+            </li>
+          </Link>
         </ul>
       </div>
-      <div
+      {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+<div
         className={`nav-holder-3 ${isOpen ? "is-active" : ""}`}
         onClick={toggleNavbar}
       >

@@ -18,7 +18,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 const Assets = () => {
-  let Equipments = [
+  const Equipments = [
     {
       image: image1,
       name: "HIGH CAPACITY 72” OD 3 PHASE SEPARATORS ",
