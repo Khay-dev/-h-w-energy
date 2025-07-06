@@ -7,8 +7,9 @@ import image1 from "../img/Road.jpg";
 import image2 from "../img/euro.jpg";
 import image3 from "../img/kolink.webp";
 import image4 from "../img/arnikon.jpg";
-
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const partnersData = [
   {
@@ -182,6 +183,9 @@ const PartnerCard = ({ partner }) => (
 );
 
 const PartnersPage = () => {
+    useEffect(() => {
+      AOS.init();
+    }, []);
   return (
     <div>
       <Helmet>
@@ -192,8 +196,12 @@ const PartnersPage = () => {
         <div className="partners-hero">
         <Nav />
         <header className="page-header">
-          <h1>Our Trusted OEM Partners</h1>
-          <p>
+          <h1  data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000">Our Trusted OEM Partners</h1>
+          <p     data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000">
             H&W Energy Limited collaborates with world-class Original Equipment Manufacturers (OEMs) to deliver cutting-edge solutions for energy, infrastructure, and industrial projects.
           </p>
         </header>

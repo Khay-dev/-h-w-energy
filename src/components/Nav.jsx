@@ -38,9 +38,6 @@ const Nav = () => {
           <HiX />
         </div>
         <ul>
-          <Link to="/">
-            <li className={activePage === "/" ? "active" : ""}>Home</li>
-          </Link>
           <Link to="/about">
             <li className={activePage === "/about" ? "active" : ""}>
               About Us
