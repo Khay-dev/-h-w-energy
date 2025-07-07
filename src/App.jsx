@@ -10,21 +10,20 @@ import Contact from "./pages/Contact";
 import PartnersPage from "./pages/Partners";
 
 function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/assets" element={<Assets />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/partners" element={<PartnersPage />} />
-
-      </Routes>
-    </Router>
-  );
+	return (
+		<Router>
+			<ScrollToTop />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/assets" element={<Assets />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/service" element={<Service />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/partners" element={<PartnersPage />} />
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;

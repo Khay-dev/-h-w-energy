@@ -23,12 +23,6 @@ const partnersData = [
       'R&D-Driven Wheel Blocks (patented, adjustable, durable)',
       'KULEKON Tower Cranes (large-scale construction solutions)',
     ],
-    capabilities: [
-      'Engineering Excellence: Tailored crane system designs',
-      'R&D Innovation: Proprietary components for enhanced functionality',
-      'Strict Quality Control: ISO, FEM, DIN standards',
-      'Support & Maintenance: Full technical support',
-    ],
     reasons: [
       'Proven OEM reliability',
       'Modular, customizable systems',
@@ -53,12 +47,6 @@ const partnersData = [
       'Forged Steel Valves (Class 2500 ratings)',
       'Cast Iron Valves (DIN/BS for waterworks)',
     ],
-    capabilities: [
-      'Engineering Flexibility: Custom valve designs',
-      'Certified Quality: API, ISO, ANSI, DIN compliance',
-      'Performance in Harsh Conditions: High-pressure, corrosive environments',
-      'OEM Commitment: Rapid support for projects',
-    ],
     reasons: [
       'API & ISO certified products',
       'Customized engineering solutions',
@@ -78,14 +66,6 @@ const partnersData = [
       'Re-Packaging of Existing Equipment (full support)',
       'Air Cooled Heat Exchangers (induced/forced draft)',
       'Centrifugal Products (gas turbines, turbomachinery)',
-    ],
-    capabilities: [
-      'Engineering Excellence: Custom compressor designs',
-      'Advanced Manufacturing: PED/ASME-certified products',
-      'Customization & Packaging: Optimized system efficiency',
-      'Aftermarket Support: Maintenance, commissioning, training',
-      'Vibration Analysis & Diagnostics: Early issue detection',
-      'NDT Services: Ensuring safety and reliability',
     ],
     reasons: [
       '30+ years of gas compression expertise',
@@ -107,15 +87,6 @@ const partnersData = [
       'High-Security Locks (Gunnebo Encry, encrypted)',
       'Software Solutions (Safe Control Manager, Gunnebo iQ)',
       'Secure Battery Storage (fire-resistant, suppression systems)',
-    ],
-    capabilities: [
-      'High-Security Safes: Certified for cash/documents',
-      'Vaults & Vault Doors: Modular, certified solutions',
-      'Safe Deposit Lockers: Automated/manual systems',
-      'Cash Management Solutions: Smart deposit/recycling',
-      'Fire & Burglary Protection: Fireproof cabinets',
-      'Digital Security: Biometric, remote monitoring',
-      'Certified Compliance: EN, UL standards',
     ],
     reasons: [
       'Unmatched security with EN, UL certifications',
@@ -148,7 +119,7 @@ const PartnerCard = ({ partner }) => (
           ))}
         </ul>
       </div>
-      <div className="partner-section">
+      {/* <div className="partner-section">
         <h3>Core Capabilities</h3>
         <ul className="partner-list">
           {partner.capabilities.map((item, index) => (
@@ -156,7 +127,7 @@ const PartnerCard = ({ partner }) => (
 <li key={index}>{item}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="partner-section">
         <h3>Why H&W Energy Partners with {partner.name}</h3>
         <ul className="partner-list">
@@ -202,7 +173,7 @@ const PartnersPage = () => {
           <p     data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1000">
-            H&W Energy Limited collaborates with world-class Original Equipment Manufacturers (OEMs) to deliver cutting-edge solutions for energy, infrastructure, and industrial projects.
+           H&W Energy collaborates with strategic OEMs and technology partners to deliver solutions in gas infrastructure, compression systems, and energy optimization. Below are some of our key partners, who have trusted us over the years as thier channel partners represent and provide value to our customers in Nigeria 
           </p>
         </header>
         </div>

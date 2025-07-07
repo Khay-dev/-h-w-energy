@@ -1,183 +1,170 @@
 .about-hero {
-    height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/about2.jpeg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    padding: 20px;
-    position: relative;
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url(../img/about2.jpeg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	padding: 20px;
+	position: relative;
 }
 
 .about-hero .abt-main-hero {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
 }
 
 .abt-main-hero h2 {
-    font-size: clamp(1.875rem, 2vw + 1rem, 3.4rem);
-    line-height: 1.25;
-    width: 60%;
+	font-size: clamp(1.875rem, 2vw + 1rem, 3.4rem);
+	line-height: 1.25;
+	width: 60%;
 }
 
 .abt-main-hero p {
-    font-size: 15px;
-    line-height: 1.45;
-    width: 60%;
-    font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.45;
+	width: 60%;
+	font-family: "Montserrat", sans-serif;
 }
 
 .section-1-abt,
 .section-4-about {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	padding: 50px;
 }
 
 .section-1-abt .section-1-a,
 .section-4-about .section-4-a {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
 }
 
 .section-1-abt .section-title,
 .section-4-about .section-title {
-    font-weight: 600;
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
-    line-height: 1.25;
+	font-weight: 600;
+	font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
+	line-height: 1.25;
 }
 
 .section-1-abt .section-text,
 .section-4-about .section-text {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.45;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.45;
 }
 
-
-
 .section-1-abt .section-btn {
-    border: 1px solid #313131;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	border: 1px solid #313131;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .section-1-abt .section-1-b,
 .section-4-about .section-4-b {
-    width: 50%;
+	width: 50%;
 }
-
-
-
 
 .section-2 {
-    padding: 50px;
-    background-color: #f2f2f2;
+	padding: 50px;
+	background-color: #f2f2f2;
 }
 
-
-
-
 .section-2-main {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2rem;
 }
 
 .section-2-a {
-    width: 45%;
-    font-size: clamp(0.8rem, 2vw + 1rem, 1.7rem);
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    color: #e65224;
+	width: 45%;
+	font-size: clamp(0.8rem, 2vw + 1rem, 1.7rem);
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: #e65224;
 }
 
 .first-1 {
-    font-size: clamp(0.8rem, 2vw + 1rem, 1.5rem);
+	font-size: clamp(0.8rem, 2vw + 1rem, 1.5rem);
 }
 
 .section-2-b {
-    width: 55%;
-    font-size: 16px;
-    line-height: 1.7;
-    padding-left: 120px;
-
+	width: 55%;
+	font-size: 16px;
+	line-height: 1.7;
+	padding-left: 120px;
 }
 
 .actual-2-b p {
-    width: 55%;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #fff;
-    text-align: start;
+	width: 55%;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #fff;
+	text-align: start;
 }
 
 .section-3-abt {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-    background-color: #f2f2f2;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	padding: 50px;
+	background-color: #f2f2f2;
 }
 
-
 .section-3-abt .section-3-a {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-left: 20px;
-
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	margin-left: 20px;
 }
 
 .section-3-abt .section-title {
-    font-weight: 600;
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
-    line-height: 1.25;
+	font-weight: 600;
+	font-size: clamp(1.5rem, 1.5vw + 1rem, 3rem);
+	line-height: 1.25;
 }
 
 .section-3-abt .section-text {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.55;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.55;
 }
 
-
 .section-3-abt .section-btn {
-    border: 1px solid #313131;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	border: 1px solid #313131;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .section-3-abt .section-3-b {
-    width: 50%;
+	width: 50%;
 }
 
 /* .section-4-about .section-4-b img {
@@ -186,97 +173,88 @@
 } */
 
 .section-4-about .b-imgs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px 0px;
 }
 
 .section-4-about .b-imgs img {
-    width: 25%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+	width: 25%;
+	aspect-ratio: 3 / 2;
+	object-fit: contain;
 }
 
-
-
-
-@media screen and (min-width:768px)and (max-width:1025px) {
-
-    .section-2-b {
-        padding-left: 30px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+	.section-2-b {
+		padding-left: 30px;
+	}
 }
 
+@media screen and (max-width: 767px) {
+	.section-1-abt .section-1-a,
+	.section-3-abt .section-3-a {
+		align-items: center;
+		text-align: center;
+	}
 
-@media screen and (max-width:767px) {
+	.abt-main-hero p {
+		width: 90%;
+	}
 
-    .section-1-abt .section-1-a,
-    .section-3-abt .section-3-a {
-        align-items: center;
-        text-align: center;
-    }
+	.abt-main-hero h2 {
+		width: 90%;
+	}
 
-    .abt-main-hero p {
-        width: 90%;
-    }
+	.section-2 {
+		place-items: flex-start;
+		padding: 35px 30px;
+	}
 
-    .abt-main-hero h2 {
-        width: 90%;
-    }
+	.section-2-header {
+		align-items: flex-start;
+	}
 
-    .section-2 {
-        place-items: flex-start;
-        padding: 35px 30px;
-    }
+	.section-2-main {
+		flex-direction: column;
+		gap: 2rem;
+		padding: 0px;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
 
-    .section-2-header {
-        align-items: flex-start;
-    }
+	.section-2-header {
+		padding-bottom: 1.2rem;
+	}
 
-    .section-2-main {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 0px;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
+	.section-2-a,
+	.section-2-b {
+		width: 100%;
+		padding: 0px;
+	}
 
+	.section-2 {
+		padding: 35px 30px;
+	}
 
-    .section-2-header {
-        padding-bottom: 1.2rem;
-    }
+	.section-1-abt,
+	.section-3-abt,
+	.section-4-about {
+		flex-direction: column;
+		padding: 35px 30px;
+	}
 
+	.section-1-abt .section-1-a,
+	.section-3-abt .section-3-a,
+	.section-3-abt .section-3-b,
+	.section-1-abt .section-1-b,
+	.section-4-about .section-4-a,
+	.section-4-about .section-4-b {
+		width: 100%;
+	}
 
-    .section-2-a,
-    .section-2-b {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .section-2 {
-        padding: 35px 30px;
-    }
-
-    .section-1-abt,
-    .section-3-abt,
-    .section-4-about {
-        flex-direction: column;
-        padding: 35px 30px;
-    }
-
-    .section-1-abt .section-1-a,
-    .section-3-abt .section-3-a,
-    .section-3-abt .section-3-b,
-    .section-1-abt .section-1-b,
-    .section-4-about .section-4-a,
-    .section-4-about .section-4-b {
-        width: 100%;
-    }
-
-    .section-4-about .b-imgs {
-        gap: 15px;
-    }
-
+	.section-4-about .b-imgs {
+		gap: 15px;
+	}
 }

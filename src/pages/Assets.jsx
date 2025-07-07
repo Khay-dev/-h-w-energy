@@ -18,117 +18,117 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 const Assets = () => {
-  const Equipments = [
-    {
-      image: image1,
-      name: "HIGH CAPACITY 72” OD 3 PHASE SEPARATORS ",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image3,
-      name: "PROCESS EQUIPMENT (LINE HEATER)",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image4,
-      name: "CONTROL VALVES ",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image5,
-      name: "H&W CAPACITY RESPONSE AND STRATEGY OUTLAY",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image6,
-      name: " CAPACITY RESPONSE AND STRATEGY OUTLAY",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image10,
-      name: "VERTICAL FLARE KO VESSEL",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image7,
-      name: "CONTAINER STORAGE: VALVES, SWITCHES, FITTINGS ",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image9,
-      name: "OEM VALVES, SWITCHES, FITTINGS, BOLTS, NUTS, GASKETS, ACCESSORIES",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image2,
-      name: "HIGH CAPACITY 72” OD 3 PHASE SEPARATORS ",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image12,
-      name: "CAPACITY RESPONSE AND STRATEGY OUTLAY",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image11,
-      name: "EQUIPMENT & STORAGE FACILITY / YARD",
-      id: crypto.randomUUID(),
-    },
-    {
-      image: image8,
-      name: "CONTAINER STORAGE",
-      id: crypto.randomUUID(),
-    },
-  ];
-  useEffect(() => {
-    AOS.init();
-  }, []);
+	const Equipments = [
+		{
+			image: image1,
+			name: "HIGH CAPACITY 72” OD 3 PHASE SEPARATORS ",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image3,
+			name: "PROCESS EQUIPMENT (LINE HEATER)",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image4,
+			name: "CONTROL VALVES ",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image5,
+			name: "H&W CAPACITY RESPONSE AND STRATEGY OUTLAY",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image6,
+			name: " CAPACITY RESPONSE AND STRATEGY OUTLAY",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image10,
+			name: "VERTICAL FLARE KO VESSEL",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image7,
+			name: "CONTAINER STORAGE: VALVES, SWITCHES, FITTINGS ",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image9,
+			name: "OEM VALVES, SWITCHES, FITTINGS, BOLTS, NUTS, GASKETS, ACCESSORIES",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image2,
+			name: "HIGH CAPACITY 72” OD 3 PHASE SEPARATORS ",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image12,
+			name: "CAPACITY RESPONSE AND STRATEGY OUTLAY",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image11,
+			name: "EQUIPMENT & STORAGE FACILITY / YARD",
+			id: crypto.randomUUID(),
+		},
+		{
+			image: image8,
+			name: "CONTAINER STORAGE",
+			id: crypto.randomUUID(),
+		},
+	];
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
-  return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>H&W|Assets </title>
-      </Helmet>
-      <div className="assets">
-        <div className="assets-hero">
-          <Nav />
-          <div className="ass-main-hero">
-            <h2
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              ASSETS & EQUIPMENTS
-            </h2>
-            <p
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              At H&W, we pride ourselves on our state of the art assets and
-              equipment that enables us to deliver high quality solutions to our
-              clients. We continually invest in our assets to stay at the
-              forefront of the industry.Our extensive range of assests and
-              equipment allows us to efficiently execute projects across various
-              sectors.{" "}
-            </p>
-          </div>
-        </div>
-        <section className="ass-section-1">
-          {Equipments.map((eqipment) => (
-            <div className="box" key={eqipment.id}>
-              <div className="box-img">
-                <img src={eqipment.image} alt="" />
-              </div>
-              <div className="box-name">{eqipment.name}</div>
-            </div>
-          ))}
-        </section>
-        <Footer />
-      </div>
-    </>
-  );
+	return (
+		<>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>H&W|Assets </title>
+			</Helmet>
+			<div className="assets">
+				<div className="assets-hero">
+					<Nav />
+					<div className="ass-main-hero">
+						<h2
+							data-aos="fade-down"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							ASSETS & EQUIPMENTS
+						</h2>
+						<p
+							data-aos="fade-down"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							At H&W, we pride ourselves on our state of the art assets and
+							equipment that enables us to deliver high quality solutions to our
+							clients. We continually invest in our assets to stay at the
+							forefront of the industry.Our extensive range of assests and
+							equipment allows us to efficiently execute projects across various
+							sectors.{" "}
+						</p>
+					</div>
+				</div>
+				<section className="ass-section-1">
+					{Equipments.map((eqipment) => (
+						<div className="box" key={eqipment.id}>
+							<div className="box-img">
+								<img src={eqipment.image} alt="" />
+							</div>
+							<div className="box-name">{eqipment.name}</div>
+						</div>
+					))}
+				</section>
+				<Footer />
+			</div>
+		</>
+	);
 };
 
 export default Assets;
