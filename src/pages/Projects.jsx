@@ -54,6 +54,13 @@ import image49 from "../img/akaso3.jpg";
 import image50 from "../img/akaso4.jpg";
 import image51 from "../img/akaso5.jpg";
 import image52 from "../img/akaso6.jpg";
+import image53 from "../img/final1.jpg";
+import image54 from "../img/final2.jpg";
+import image55 from "../img/final3.jpg";
+import image56 from "../img/final4.jpg";
+import image57 from "../img/final5.jpg";
+import image58 from "../img/final6.jpg";
+
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -182,6 +189,18 @@ const Projects = () => {
 			image4: image50,
 			image5: image51,
 			image6: image52,
+
+			id: crypto.randomUUID(),
+		},
+		{
+			title: "SERVICE FOR WESTERN ASSET LOCATIONS",
+			description: "Job: PROVISION OF CONSTRUCTION OF BULKLINES/MANIFOLDS & GAS PIPELINES (CALL OFF SERVICES)",
+			image1: image53,
+			image2: image54,
+			image3: image55,
+			image4: image56,
+			image5: image57,
+			image6: image58,
 
 			id: crypto.randomUUID(),
 		},

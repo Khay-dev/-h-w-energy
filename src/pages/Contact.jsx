@@ -28,8 +28,11 @@ const Contact = () => {
 							</span>
 						</div>
 						<div className="part part2">
-							<a href="tel: +234(0)9053747912">+2349053747912</a>
+							<a href="tel: +234(0)8063415446">+2348063415446   </a>
 						</div>
+						<div className="part part2">
+            <a href="tel: +234(0)7062321354">+2347062321354   </a>
+            </div>
 						<div className="part part3">
 							<a href="mailto:info@handwenergy.com">info@handwenergy.com</a>
 						</div>
