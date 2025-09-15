@@ -1,6 +1,6 @@
-import { TfiAngleDoubleLeft, TfiImport } from "react-icons/tfi";
+import { TfiAngleDoubleLeft } from "react-icons/tfi";
 import "./Footer.css";
-import Menu from "../assets/brochure.pdf";
+// import Menu from "../assets/brochure.pdf";
 
 const Footer = () => {
 	const top = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
 						<div className="mail">
 							<a href="mailto:info@handwenergy.com">info@handwenergy.com</a>
 						</div>
-						<div className="download ">
+						{/* <div className="download ">
 							<a
 								href={Menu}
 								download="Brochure"
@@ -38,7 +38,7 @@ const Footer = () => {
 								<TfiImport />
 								DOWNLOAD BROCHURE
 							</a>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="footer-3">

@@ -6,7 +6,7 @@ import image2 from "../img/project20.jpg";
 import image3 from "../img/onshore.jpeg";
 import about from "../img/habout.jpeg";
 import Footer from "../components/Footer";
-import Menu from "../assets/brochure.pdf";
+// import Menu from "../assets/brochure.pdf";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -57,7 +57,7 @@ const Home = () => {
 							support,operating excellence and industry knowledge to ensure
 							reliable and consistent performance.
 						</p>
-						<div
+						{/* <div
 							className="hero-btn"
 							data-aos="fade-down"
 							data-aos-easing="linear"
@@ -68,7 +68,7 @@ const Home = () => {
 									<span>Download Brochure</span>
 								</a>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<section className="section-1">

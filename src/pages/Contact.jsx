@@ -1,6 +1,6 @@
 import Nav from "../components/Nav";
-import { TfiImport } from "react-icons/tfi";
-import Menu from "../assets/brochure.pdf";
+// import { TfiImport } from "react-icons/tfi";
+// import Menu from "../assets/brochure.pdf";
 import "../styles/Contact.css";
 import { Helmet } from "react-helmet";
 const Contact = () => {
@@ -36,7 +36,7 @@ const Contact = () => {
 						<div className="part part3">
 							<a href="mailto:info@handwenergy.com">info@handwenergy.com</a>
 						</div>
-						<div className="part part4 ">
+						{/* <div className="part part4 ">
 							<a
 								href={Menu}
 								download="Brochure"
@@ -46,7 +46,7 @@ const Contact = () => {
 								<TfiImport />
 								DOWNLOAD BROCHURE
 							</a>
-						</div>
+						</div> */}
 					</div>
 				</section>
 			</div>

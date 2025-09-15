@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import "../styles/Project.css";
-import Menu from "../assets/brochure.pdf";
+// import Menu from "../assets/brochure.pdf";
 import image1 from "../img/abouta.png";
 import image2 from "../img/project15.jpg";
 import image3 from "../img/project1.jpg";
@@ -237,7 +237,7 @@ const Projects = () => {
 							are dedicated to delievering innovative and sustainable solutions
 							that exceed clients expectations.{" "}
 						</p>
-						<div
+						{/* <div
 							className="custom-btn btn-13"
 							data-aos="fade-down"
 							data-aos-easing="linear"
@@ -246,7 +246,7 @@ const Projects = () => {
 							<a href={Menu} download="Brochure">
 								<span>Download Brochure</span>
 							</a>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<section className="section-project">

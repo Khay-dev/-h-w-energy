@@ -9,10 +9,14 @@ import grid4 from "../img/wagpco.jpeg";
 import grid5 from "../img/heritage.svg";
 import grid6 from "../img/NLNG.jpeg";
 import grid7 from "../img/npdc.png";
-import grid8 from "../img/Seplat.jpeg";
+import grid8 from "../img/seplatnew.png";
 import grid9 from "../img/Total.jpeg";
+import gridA from "../img/aralogo.png";
+import gridB from "../img/Savlogo.svg";
+import gridC from "../img/shell.avif";
+
 import "../styles/About.css";
-import Menu from "../assets/brochure.pdf";
+// import Menu from "../assets/brochure.pdf";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +54,7 @@ const About = () => {
 							professionals is passionate about delievering quality services and
 							solutions to clients.
 						</p>
-						<div
+						{/* <div
 							data-aos="fade-down"
 							data-aos-easing="linear"
 							data-aos-duration="1000"
@@ -59,7 +63,7 @@ const About = () => {
 							<a href={Menu} download="Brochure">
 								<span>Download Brochure</span>
 							</a>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<section className="section-1-abt">
@@ -120,10 +124,13 @@ const About = () => {
 					<div className="section-4-b">
 						<div className="b-imgs">
 							<img src={grid1} alt="" />
-							<img src={grid2} alt="" /> <img src={grid6} alt="" />{" "}
-							<img src={grid3} alt="" /> <img src={grid7} alt="" />{" "}
-							<img src={grid4} alt="" /> <img src={grid8} alt="" />{" "}
-							<img src={grid5} alt="" /> <img src={grid9} alt="" />{" "}
+							<img src={grid2} alt="" /> <img src={grid6} alt="" />
+							<img src={grid3} alt="" /> <img src={grid7} alt="" />
+							<img src={grid4} alt="" /> <img src={grid8} alt="" />
+							<img src={gridB} alt="" />
+							<img src={grid5} alt="" /> <img src={grid9} alt="" />
+							<img src={gridA} alt="" />
+							<img src={gridC} alt="" />
 						</div>
 					</div>
 				</section>
