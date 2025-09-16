@@ -13,7 +13,7 @@ import grid8 from "../img/seplatnew.png";
 import grid9 from "../img/Total.jpeg";
 import gridA from "../img/aralogo.png";
 import gridB from "../img/Savlogo.svg";
-import gridC from "../img/shell.avif";
+import gridC from "../img/shell.png";
 
 import "../styles/About.css";
 // import Menu from "../assets/brochure.pdf";
