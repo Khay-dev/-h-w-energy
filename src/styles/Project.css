@@ -61,7 +61,7 @@ span {
 	z-index: 2000;
 	background-color: #e65224;
 	margin-bottom: 20px;
-	padding: 15px;
+	padding: 35px;
 }
 
 .text-contain .title {
@@ -93,14 +93,18 @@ span {
 	width: 500px;
 	height: 350px;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+	.box .text-contain {
+			top: 10%;
+		}
+}
 @media screen and (max-width: 767px) {
 	.proj-main-hero p {
 		width: 90%;
 	}
 
 	.box .text-contain {
-		top: 16%;
+		top: 10%;
 	}
 
 	.text-contain .text {
