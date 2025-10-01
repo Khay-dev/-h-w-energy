@@ -48,8 +48,8 @@ const Nav = () => {
 							Services
 						</li>
 					</Link>
-					<Link to="/assets">
-						<li className={activePage === "/assets" ? "active" : ""}>
+					<Link to="/ourassets">
+						<li className={activePage === "/ourassets" ? "active" : ""}>
 							Assets/Equipments
 						</li>
 					</Link>
